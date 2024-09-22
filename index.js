@@ -16,10 +16,10 @@ const loadContent = (folderName) => {
 
 // Define routes with the corresponding folder to load
 const routes = {
-  "/": "home",
-  "/history": "history",
-  "/architecture": "architecture",
-  "/influence": "influence",
+  "/University-website-St.-Sophia-Cathedral-/": "home",
+  "/University-website-St.-Sophia-Cathedral-/history": "history",
+  "/University-website-St.-Sophia-Cathedral-/architecture": "architecture",
+  "/University-website-St.-Sophia-Cathedral-/influence": "influence",
 };
 
 // Handle navigation and dynamic page loading
