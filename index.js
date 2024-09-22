@@ -36,12 +36,13 @@ const router = () => {
 
 // Listen for link clicks
 document.addEventListener("DOMContentLoaded", () => {
-  const menuItem = document.querySelectorAll(".menu__item");
-  menuItem.forEach((item) => {
+  const menuItems = document.querySelectorAll(".menu__item");
+  menuItems.forEach((item) => {
     item.addEventListener("click", (e) => {
-      if (e.target.matches("[data-link]")) {
-        e.preventDefault();
-        navigateTo(e.target.href);
+      e.preventDefault();
+      const link = e.target.closest("[data-link]");
+      if (link) {
+        navigateTo(link.getAttribute("href"));
       }
     });
   });
