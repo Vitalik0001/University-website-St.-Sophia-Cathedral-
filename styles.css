@@ -1,0 +1,54 @@
+@import "./src/pages/home/styles.css";
+@import "./src/pages/history/styles.css";
+@import "./src/pages/architecture/styles.css";
+@import "./src/pages/influence/styles.css";
+header .header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+header .header__logo {
+  width: 50px;
+}
+header .menu__list {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+header .menu__item {
+  transition: all 0.18s ease-in-out;
+  cursor: pointer;
+}
+header .menu__item:hover {
+  color: #db6b15;
+}
+
+main .container {
+  min-height: calc(100vh - 132px);
+  padding-bottom: 48px;
+}
+
+footer .footer__wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(162, 107, 40);
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+footer .footer__rights {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
